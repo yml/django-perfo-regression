@@ -1,6 +1,6 @@
 # Django settings for template_perfo_regression project.
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -86,9 +86,9 @@ SECRET_KEY = 'cwmn=3dr4p7!n$vi4yhwhgf#r=&amp;j+)j9ivw+8$3r!hxn$3!f6m'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
-    'django.template.loaders.filesystem.Loader',
-    'django.template.loaders.app_directories.Loader',
-#     'django.template.loaders.eggs.Loader',
+    ('django.template.loaders.cached.Loader', (
+        'django.template.loaders.filesystem.Loader',
+        'django.template.loaders.app_directories.Loader')),
 )
 
 MIDDLEWARE_CLASSES = (
