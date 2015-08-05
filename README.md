@@ -24,5 +24,5 @@ Since **Django 1.7** the time required to render templates with `include` and `e
 
 ## Additional information
 
-[django ticket](https://code.djangoproject.com/ticket/25228#ticket)
-[spreadsheet with my results](https://docs.google.com/spreadsheets/d/1v-cXcx8lLOF7sphtvdofU-30GmpPCyvgn1TjIRJk4OM/edit#gid=0)
+* [django ticket](https://code.djangoproject.com/ticket/25228#ticket)
+* [spreadsheet with my results](https://docs.google.com/spreadsheets/d/1v-cXcx8lLOF7sphtvdofU-30GmpPCyvgn1TjIRJk4OM/edit#gid=0)
