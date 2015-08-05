@@ -21,3 +21,8 @@ Since **Django 1.7** the time required to render templates with `include` and `e
 ![cached.Loader & DEBUG=False](https://docs.google.com/spreadsheets/d/1v-cXcx8lLOF7sphtvdofU-30GmpPCyvgn1TjIRJk4OM/pubchart?oid=1717835180&format=image)
 
 **Django 1.8.3** introduced a significant slow down in the **1.8** family that was other wise faster than the previous releases.
+
+## Additional information
+
+[django ticket](https://code.djangoproject.com/ticket/25228#ticket)
+[spreadsheet with my results](https://docs.google.com/spreadsheets/d/1v-cXcx8lLOF7sphtvdofU-30GmpPCyvgn1TjIRJk4OM/edit#gid=0)
