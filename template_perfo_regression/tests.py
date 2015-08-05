@@ -25,18 +25,18 @@ class TemplatePerfoTestCase(unittest.TestCase):
 
     def test_template_performance_no_extends(self):
         timer = timeit.Timer(self.rendered_child_no_extends)
-        print u"This test standalone rendering {0}".format(timer.timeit(1000))
+        print u"This test standalone rendering {0}".format(timer.timeit(5000))
 
     def test_template_performance_extends(self):
         timer = timeit.Timer(self.rendered_child)
-        print u"This test extends {0}".format(timer.timeit(1000))
+        print u"This test extends {0}".format(timer.timeit(5000))
 
     def test_template_performance_include_extends(self):
         timer = timeit.Timer(self.rendered_base)
-        print u"This test include and extends {0}".format(timer.timeit(1000))
+        print u"This test include and extends {0}".format(timer.timeit(5000))
 
     def test_template_performance_include_no_extends(self):
         timer = timeit.Timer(self.rendered_base_no_extends)
-        print u"This test include {0}".format(timer.timeit(1001))
+        print u"This test include {0}".format(timer.timeit(5000))
 
 
