@@ -1,8 +1,8 @@
 import timeit
-from django.utils import unittest
+from django.test import TestCase
 from django.template import RequestContext, loader
 
-class TemplatePerfoTestCase(unittest.TestCase):
+class TemplatePerfoTestCase(TestCase):
     def setUp(self):
         self.params = {'foo': 'bar', 'range': range(10)}
 
